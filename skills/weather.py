@@ -2,8 +2,6 @@ import os
 import requests
 from dotenv import load_dotenv
 
-load_dotenv()
-
 API_KEY = os.getenv("WEATHER_API")
 DEFAULT_CITY = os.getenv("DEFAULT_CITY", "Hyderabad")
 def get_weather(text=None):

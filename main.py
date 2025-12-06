@@ -9,6 +9,15 @@ from skills.calculator import safe_eval
 from skills.gk import ask_openai
 from stt_tts.stt import listen
 from stt_tts.tts import speak
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file in root
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(PROJECT_ROOT, ".env"))
+
+# Now all modules can access these keys
+OPENAI_KEY = os.getenv("OPENAI_API_KEY")
 
 def handle_intent(tag, text):
     if tag == "weather":
@@ -26,7 +35,7 @@ def handle_intent(tag, text):
     elif tag == "calculator":
         return safe_eval(text)
     elif tag == "gk":
-        return ask_openai(text)
+        return ask_openai(text,OPENAI_KEY)
     elif tag == "exit":
         return "exit"
     return "I did not understand that."

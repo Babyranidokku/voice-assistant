@@ -1,6 +1,7 @@
 import os, requests
 from dotenv import load_dotenv
-load_dotenv()
+
+
 SPOON_KEY = os.getenv("SPOONACULAR_API")
 def get_recipe_steps(text):
     dish = extract_dish(text)
