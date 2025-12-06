@@ -1,0 +1,15 @@
+{
+"intents": [
+{"tag":"greeting","patterns":["hello","hi","hey"]},
+{"tag":"weather","patterns":["weather","temperature","forecast"]},
+{"tag":"recipe","patterns":["recipe","cook","how to make"]},
+{"tag":"time","patterns":["time","date"]},
+{"tag":"open","patterns":["open","launch"]},
+{"tag":"music","patterns":["play music","play song"]},
+{"tag":"joke","patterns":["tell me a joke","joke"]},
+{"tag":"calculator","patterns":
+["calculate","plus","minus","multiply","divide"]},
+{"tag":"gk","patterns":["who is","what is","define"]},
+{"tag":"exit","patterns":["exit","quit","bye"]}
+]
+}

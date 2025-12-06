@@ -2,7 +2,7 @@ from dialog.manager import match_intent
 from skills.weather import get_weather
 from skills.recipe import get_recipe_steps
 from skills.time import get_time, get_date
-from skills.system_control import open_target
+from skills.systemcotrol import open_target
 from skills.music import play_random
 from skills.jokes import tell_joke
 from skills.calculator import safe_eval
